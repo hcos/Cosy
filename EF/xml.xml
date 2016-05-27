@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+###############################################################################
+#                                                                             #
+#  IMITATOR : EF - Paramètres et options                                      #
+#                                                                             #
+###############################################################################-->
+<imitator>
+	<title>Settings for EFsynth</title>
+	<partitle>Property to verify</partitle>
+	<par name="prop" class="prop"></par>
+	<op	name="depth_limit"
+		help="Maximum depth of the state space"
+		>Depth limit</op>
+	<op	name="states_limit"
+		help="Maximum number of states to explore"
+		>States limit</op>
+	<op	name="time_limit"
+		help="Maximum execution time (in seconds)"
+		>Time limit</op>
+	<ck	name="dynamic_elimination"
+		help="Dynamic clock	elimination [And13]"
+		checked="checked"
+		>Dynamic elimination</ck>
+	<ck	name="inclusion_check"
+		help="Fixpoint by inclusion check instead of equality check"
+		checked="checked"
+		>Inclusion check</ck>
+	<ck	name="merge_states"
+		help="Convex state merging [AFS13]"
+		checked="checked"
+		>Merge states</ck>
+	<ck	name="output_states_description"
+		help="Return a textual description of all symbolic statess"
+		checked="checked"
+		>Output states description</ck>
+	<ck	name="output_trace_set"
+		help="Return the trace set in a graphical form"
+		checked="checked"
+		>Output trace set</ck>
+</imitator>

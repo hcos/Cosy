@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>
+            Settings for EFsynth
+        </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="../css.css" type="text/css" />
+        <link rel="stylesheet" href="css.css" type="text/css" />
+    </head>
+    <body ondragstart="return false;" ondrop="return false;">
+        <div class="container">
+            <form class="form-horizontal" role="form">
+                <h1>
+                    Settings for EFsynth
+                </h1>
+                <div class="form-group im-group">
+                    <h2>
+                        Property to verify
+                    </h2>
+                    <div class="row col-md-10 col1">
+                        <div class="form-group">
+                            <div class="col-sm-7">
+                                <input type="text" id="prop" class="prop" placeholder="enter value" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-9 im-group">
+                        <h2>
+                            Options
+                        </h2>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Depth limit</label>
+                            <div class="col-sm-4">
+                                <input class="col-sm-4" type="text" id="depth_limit" />
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="Maximum depth of the state space"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">States limit</label>
+                            <div class="col-sm-4">
+                                <input class="col-sm-4" type="text" id="states_limit" />
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="Maximum number of states to explore"></div>
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label col-sm-4">Time limit</label>
+                            <div class="col-sm-4">
+                                <input class="col-sm-4" type="text" id="time_limit" />
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign" data-toggle="tooltip" title="Maximum execution time (in seconds)"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <label class="control-label col-sm-4">Dynamic elimination</label>
+                                <div class="col-sm-3">
+                                    <input type="checkbox" id="dynamic_elimination" checked="checked" />
+                                </div>
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign col-sm-offset-1" data-toggle="tooltip" title="Dynamic clock elimination [And13]"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <label class="control-label col-sm-4">Inclusion check</label>
+                                <div class="col-sm-3">
+                                    <input type="checkbox" id="inclusion_check" checked="checked" />
+                                </div>
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign col-sm-offset-1" data-toggle="tooltip" title="Fixpoint by inclusion check instead of equality check"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <label class="control-label col-sm-4">Merge states</label>
+                                <div class="col-sm-3">
+                                    <input type="checkbox" id="merge_states" checked="checked" />
+                                </div>
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign col-sm-offset-1" data-toggle="tooltip" title="Convex state merging [AFS13]"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <label class="control-label col-sm-4">Output states description</label>
+                                <div class="col-sm-3">
+                                    <input type="checkbox" id="output_states_description" checked="checked" />
+                                </div>
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign col-sm-offset-1" data-toggle="tooltip" title="Return a textual description of all symbolic statess"></div>
+                        </div>
+                        <div class="form-group">
+                            <div class="controls">
+                                <label class="control-label col-sm-4">Output trace set</label>
+                                <div class="col-sm-3">
+                                    <input type="checkbox" id="output_trace_set" checked="checked" />
+                                </div>
+                            </div>
+                            <div class="glyphicon glyphicon-info-sign col-sm-offset-1" data-toggle="tooltip" title="Return the trace set in a graphical form"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 pull-right">
+                        <svg height="460" width="350">
+                            <g id="group-abort">
+                                <path id="btn-abort" d="m 165 200 l 150 0 l 0 150 l-150 0 Z" class="abortup"></path>
+                                <text x="240" y="245">
+                                    Abort
+                                </text>
+                            </g>
+                            <g id="group-run">
+                                <path id="btn-run" d="m 165 200 l 150 100 l-150 100 Z" class="runup"></path>
+                                <text x="200" y="277">
+                                    Run
+                                </text>
+                            </g>
+                            <g id="group-cancel" onclick="alert('back »»» window.location.assign(\'../..\')')">
+                                <path id="btn-cancel" d="m 160 200 l -150 100 l 150 100 Z" class="cancelup"></path>
+                                <text x="125" y="262">
+                                    Cancel
+                                </text>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </form>
+        </div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js" type="text/javascript">
+</script><script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript">
+</script><script src="../js.js" type="text/javascript">
+</script><script src="js.js" type="text/javascript">
+</script>
+    </body>
+</html>
