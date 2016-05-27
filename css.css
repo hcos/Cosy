@@ -1,0 +1,21 @@
+h1				{	background-color: #729fcf; text-align: center; padding:15px 0 15px 0; margin-left:-15px;						}
+.im-group		{	background-color: #9999ff; margin-top:15px; padding:0px 0px 0px 25px; width:650px; overflow:hidden;				}
+.form-control	{	width:320px; margin-bottom:15px;																				}
+.glyphicon		{	margin-top: 8px;																								}
+input[type="checkbox"]
+				{	margin-top: 10px;																								}
+input[type="text"]
+				{	margin-top: 3px;																								}
+.prop			{	width:400px; height:60px;																						}
+svg text			{	-webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none;					}
+svg text::selection
+				{	background: none;																								}
+svg path			{	stroke:black; stroke-width:2; fill-opacity:0.5;																	}
+svg text			{	writing-mode:tb; glyph-orientation-vertical:90; fill:#999999; stroke:#000000; font-size:24px;					}
+.abortdown		{	fill: purple;																									}
+.abortup		{	fill: red;																										}
+.canceldown		{	fill: purple;																									}
+.cancelup		{	fill: red;																										}
+.clicked		{	fill: orange;																									}
+.rundown		{	fill: green;																									}
+.runup			{	fill: #99ff66;																									}
